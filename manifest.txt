@@ -1,0 +1,2 @@
+Main-Class: AppMain
+Class-Path: lib/mysql-connector-j-9.4.0.jar
