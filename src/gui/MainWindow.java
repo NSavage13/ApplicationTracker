@@ -39,6 +39,7 @@ public class MainWindow extends JFrame {
         };
         table = new JTable(tableModel);
         JScrollPane scrollPane = new JScrollPane(table);
+        table.removeColumn(table.getColumnModel().getColumn(0)); // remove id view
         add(scrollPane, BorderLayout.CENTER);
 
         // Button Panel
@@ -62,7 +63,7 @@ public class MainWindow extends JFrame {
             }
         });
 
-        loadApplications(); // Load data
+        loadApplications(); 
         setVisible(true);
     }
 

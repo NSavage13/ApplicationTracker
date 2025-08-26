@@ -9,7 +9,7 @@ public class ApplicationDAO {
 
     public List<Application> getAllApplications() {
         List<Application> applications = new ArrayList<>();
-
+ 
         String query = "SELECT * FROM applications";
 
         try (Connection conn = Database.connect();
